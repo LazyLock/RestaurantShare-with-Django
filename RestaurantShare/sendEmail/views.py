@@ -23,7 +23,7 @@ def sendEmail(request):
         mail_html += "<h4>* 관련 링크</h4>"+"<p>"+restaurant.restaurant_link+"</p><br>"
         mail_html += "<h4>* 상세 내용</h4>"+"<p>"+restaurant.restaurant_content+"</p><br>"
         mail_html += "<h4>* 관련 키워드</h4>"+"<p>"+restaurant.restaurant_keyword+"<p><br>"
-        mail_html += "</body></html>"
+    mail_html += "</body></html>"
 
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     server.login("codesbychloe@gmail.com", "!0812kang")
